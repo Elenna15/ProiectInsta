@@ -15,8 +15,8 @@ public class SignInTest extends BaseTest {
     @Test
     public void signIn() {
 
-        String email = "abc@email.com";
-        String password = "Parola1";
+        String email = "abcd@email.com";
+        String password = "Password123";
 
         LOG.info("Click the button");
         sleep(3000L);

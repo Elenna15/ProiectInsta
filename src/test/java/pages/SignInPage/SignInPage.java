@@ -20,7 +20,7 @@ public class SignInPage extends BasePage {
         return instance;
     }
 
-    private By allowAllCookies = By.xpath("//button[@tabindex='0']");
+    private By allowAllCookies = By.xpath("//button[text()='Allow all cookies']");
     private By signInButton = By.xpath("//button[@type='submit']");
     private By logo = By.xpath("//i[@aria-label='Instagram']");
     private By emailField = By.xpath("//input[@class='_aa4b _add6 _ac4d _ap35']");
