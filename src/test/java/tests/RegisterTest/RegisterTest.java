@@ -13,8 +13,9 @@ public class RegisterTest extends BaseTest {
 
     String number = "0745823647";
     String name = "Pop Ana";
-    String username = "user_357";
-    String password = "pass1";
+    String username = "popana844";
+    String password = "passuser1376";
+
 
 
     @Test
@@ -38,6 +39,11 @@ public class RegisterTest extends BaseTest {
 
         LOG.info("Type password");
         registerPage.insertPassword(password);
+        sleep(5000L);
+
+        LOG.info("Click the next button");
+        registerPage.clickNext();
+
 
 
     }

@@ -25,30 +25,44 @@ public class RegisterPage extends BasePage {
     private By inputFullName = By.xpath("//input[@aria-label='Full Name']");
     private By inputUsername = By.xpath("//input[@aria-label='Username']");
     private By inputPassword = By.xpath("//input[@type='password']");
+    private By nextButton = By.xpath("//div/div/button[text()='Next']");
+    private By inputMonth = By.xpath("//span/select[@title='Month:']");
+    private By inputDay = By.xpath("//span/select[@title='Day:']");
+    private By inputYear = By.xpath("//span/select[@title='Year:']");
+    private By nextButton2 = By.xpath("//div[6]/button");
 
-    public void clickCookies(){
+
+
+    public void clickCookies() {
         LOG.info("Click the button");
         driver.findElement(allowAllCookies).click();
     }
 
-    public void insertNumber(String number){
+    public void insertNumber(String number) {
         LOG.info("Insert Number Phone");
         driver.findElement(inputNumber).sendKeys(number);
     }
 
-    public void insertFullName(String name){
+    public void insertFullName(String name) {
         LOG.info("Insert full name");
         driver.findElement(inputFullName).sendKeys(name);
     }
 
-    public void insertUsername(String username){
+    public void insertUsername(String username) {
         LOG.info("Insert username");
         driver.findElement(inputUsername).sendKeys(username);
     }
 
-    public void insertPassword(String password){
+    public void insertPassword(String password) {
         LOG.info("Insert password");
         driver.findElement(inputPassword).sendKeys(password);
     }
+
+    public void clickNext() {
+        LOG.info("Click the next button");
+        driver.findElement(nextButton).click();
+    }
+
+
 
 }

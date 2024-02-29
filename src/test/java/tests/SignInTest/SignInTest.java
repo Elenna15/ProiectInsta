@@ -38,8 +38,11 @@ public class SignInTest extends BaseTest {
         LOG.info("Check Facebook button");
         Assert.assertTrue(signInPage.isFacebookButtonDisplayed(), "Button is not displayed");
 
-        LOG.info("Click Facebook button");
-        signInPage.clickFacebookButton();
+        LOG.info("Click 'Sign In' button");
+        signInPage.clickSignIn();
+
+
+
     }
 
 

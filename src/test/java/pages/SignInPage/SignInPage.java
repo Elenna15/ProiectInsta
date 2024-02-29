@@ -28,7 +28,8 @@ public class SignInPage extends BasePage {
     private By facebookButton = By.xpath("//button[@type='button']");
     private By signUpButton = By.xpath("//span[text()='Sign up']");
 
-    public void clickAllowAllCookies(){
+
+    public void clickAllowAllCookies() {
         LOG.info("Click the button");
         driver.findElement(allowAllCookies).click();
     }
@@ -38,7 +39,7 @@ public class SignInPage extends BasePage {
         return driver.findElement(signInButton).isDisplayed();
     }
 
-    public boolean isLogoDisplayed(){
+    public boolean isLogoDisplayed() {
         LOG.info("Verify if Logo image is displayed");
         return driver.findElement(logo).isDisplayed();
     }
@@ -47,6 +48,7 @@ public class SignInPage extends BasePage {
         LOG.info("Input 'Email address' in field");
         driver.findElement(emailField).sendKeys(Email);
     }
+
     public void insertPassword(String Password) {
         LOG.info("Input 'Password' in field");
         driver.findElement(passwordField).sendKeys(Password);
@@ -57,15 +59,16 @@ public class SignInPage extends BasePage {
         return driver.findElement(facebookButton).isDisplayed();
     }
 
-    public void clickFacebookButton() {
-        LOG.info("Click Facebook button");
-        driver.findElement(facebookButton).click();
+    public void clickSignIn() {
+        LOG.info("Click 'Sign In' button");
+        driver.findElement(signInButton).click();
     }
 
-    public void clickSignUp(){
+    public void clickSignUp() {
         LOG.info("Click 'Sign Up' button");
         driver.findElement(signUpButton).click();
     }
+
 
 
 
